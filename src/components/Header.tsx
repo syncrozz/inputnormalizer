@@ -29,7 +29,7 @@ export function Header({ onOpenWorkspace }: HeaderProps) {
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-lg sm:text-xl font-extrabold tracking-tight text-slate-900">
-                  SYNCROZZ <span className="text-indigo-600 font-semibold">INPUT NORMALIZER</span>
+                  INPUT <span className="text-indigo-600 font-semibold">NORMALIZER</span>
                 </h1>
                 <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
                   {BRANDING.VERSION}
