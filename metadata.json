@@ -1,0 +1,8 @@
+{
+  "name": "Input Normalizer",
+  "description": "Utility web app untuk membersihkan dan memformat input teks mentah secara pantas, deterministic, dan selamat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

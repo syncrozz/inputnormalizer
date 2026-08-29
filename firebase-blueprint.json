@@ -1,0 +1,36 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "User profile document storing basic identity and role",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Firebase Auth UID" },
+        "email": { "type": "string", "description": "User email address" },
+        "displayName": { "type": "string", "description": "User display name" },
+        "photoURL": { "type": "string", "description": "User avatar photo URL" },
+        "role": { "type": "string", "description": "User role: USER | ADMIN | MASTER_ADMIN", "default": "USER" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "lastLoginAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "users/{userId}/records": {
+      "title": "User Saved Normalizer Records",
+      "description": "Saved normalized text records and history scoped to authenticated user",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "rawInput": { "type": "string" },
+        "formattedOutput": { "type": "string" },
+        "mode": { "type": "string" },
+        "isSaved": { "type": "boolean", "default": false },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "rawInput", "formattedOutput", "mode"]
+    }
+  }
+}
