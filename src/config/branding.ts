@@ -62,14 +62,14 @@ export const BRANDING: BrandingConfig = {
   BACKGROUND_COLOR: '#f8fafc',
 
   ASSETS: {
-    // Leave as null if official asset is pending. When user provides official URL, paste here.
-    LOGO: null,
-    APP_ICON: null,
-    FAVICON: null,
-    PWA_ICON_192: null,
-    PWA_ICON_512: null,
-    APPLE_TOUCH_ICON: null,
-    OG_IMAGE: null,
+    // Official GitHub Raw Assets for INPUT Normalizer
+    LOGO: 'https://raw.githubusercontent.com/syncrozz/syncrozz-assets/main/logo/INPUTNormalizer/android-chrome-512x512.png',
+    APP_ICON: 'https://raw.githubusercontent.com/syncrozz/syncrozz-assets/main/logo/INPUTNormalizer/android-chrome-192x192.png',
+    FAVICON: 'https://raw.githubusercontent.com/syncrozz/syncrozz-assets/main/logo/INPUTNormalizer/favicon-32x32.png',
+    PWA_ICON_192: 'https://raw.githubusercontent.com/syncrozz/syncrozz-assets/main/logo/INPUTNormalizer/web-app-manifest-192x192.png',
+    PWA_ICON_512: 'https://raw.githubusercontent.com/syncrozz/syncrozz-assets/main/logo/INPUTNormalizer/web-app-manifest-512x512.png',
+    APPLE_TOUCH_ICON: 'https://raw.githubusercontent.com/syncrozz/syncrozz-assets/main/logo/INPUTNormalizer/apple-touch-icon.png',
+    OG_IMAGE: 'https://raw.githubusercontent.com/syncrozz/syncrozz-assets/main/logo/INPUTNormalizer/OGI.INPUTNormalizer.jpg',
   },
 
   SUPPORT: {
