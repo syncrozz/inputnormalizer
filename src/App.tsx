@@ -14,7 +14,6 @@ import { SupportModal } from './components/SupportModal';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { normalizeInput } from './lib/normalizers';
 import { NormalizationMode, PhoneFormatOption } from './types';
-import { BRANDING } from './config/branding';
 import { AlertCircle, X } from 'lucide-react';
 
 function AppContent() {
@@ -141,7 +140,7 @@ function AppContent() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
           <div className="flex items-center gap-2">
             <span>
-              Develop By{' '}
+              Developed by{' '}
               <a
                 href="https://www.syncrozz.com/"
                 target="_blank"
@@ -151,8 +150,20 @@ function AppContent() {
                 Syncrozz
               </a>
             </span>
-            <span className="text-slate-300">•</span>
-            <span>Prinsip: <em>{BRANDING.PLATFORM_PRINCIPLE}</em></span>
+            <a
+              href="https://wa.me/60145313756"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center hover:opacity-80 transition-opacity"
+              aria-label="WhatsApp Contact"
+            >
+              <img
+                src="https://raw.githubusercontent.com/syncrozz/syncrozz-assets/main/logo/MAIN/Logo%20Whatapp%20v2.png"
+                alt="WhatsApp"
+                className="w-5 h-5 object-contain"
+                loading="lazy"
+              />
+            </a>
           </div>
 
           <div className="flex items-center gap-3">
