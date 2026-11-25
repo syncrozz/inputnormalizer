@@ -96,7 +96,7 @@ export function formatOneLine(input: string): string {
  */
 export function formatFilename(input: string): string {
   if (!input) return '';
-  return cleanText(input).replace(/_+/g, ' ').replace(/\\s+/g, ' ').trim();
+  return cleanText(input).replace(/_+/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
 /**
