@@ -90,6 +90,16 @@ export function formatOneLine(input: string): string {
 }
 
 /**
+ * FILENAME FORMAT
+ * Removes underscores from file names by replacing them with spaces.
+ * Preserves the filename's letter casing, numbers, punctuation and extension.
+ */
+export function formatFilename(input: string): string {
+  if (!input) return '';
+  return cleanText(input).replace(/_+/g, ' ').replace(/\\s+/g, ' ').trim();
+}
+
+/**
  * LIST -> SENTENCE
  * Identifies numbering or bullet lists and converts them to a coherent sentence.
  * Examples:
@@ -373,6 +383,12 @@ export function normalizeInput(
       return {
         output: formatOneLine(input),
         detectedMode: mode === 'auto' ? 'one_line' : undefined,
+      };
+    }
+    case 'filename': {
+      return {
+        output: formatFilename(input),
+        detectedMode: mode === 'auto' ? 'filename' : undefined,
       };
     }
     case 'list_to_sentence': {
