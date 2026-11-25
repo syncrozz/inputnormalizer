@@ -4,6 +4,7 @@ export type NormalizationMode =
   | 'all_caps'
   | 'lowercase'
   | 'one_line'
+  | 'filename'
   | 'list_to_sentence'
   | 'phone_whatsapp'
   | 'clean_text';
