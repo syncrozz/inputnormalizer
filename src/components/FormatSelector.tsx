@@ -8,6 +8,7 @@ import {
   ListOrdered,
   PhoneCall,
   Sparkles,
+  FileText,
 } from 'lucide-react';
 import { ModeOption, NormalizationMode } from '../types';
 
@@ -52,6 +53,13 @@ export const MODES: (ModeOption & { icon: ComponentType<{ className?: string }> 
     shortLabel: 'One Line',
     description: 'Gabung berbilang baris ke satu baris',
     icon: AlignLeft,
+  },
+  {
+    id: 'filename',
+    label: 'FILE NAME',
+    shortLabel: 'File Name',
+    description: 'Buang underscore (_) dalam nama fail dan gantikan dengan ruang',
+    icon: FileText,
   },
   {
     id: 'list_to_sentence',
